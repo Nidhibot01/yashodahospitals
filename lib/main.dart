@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+
 void main() => runApp(MaterialApp(
   home: Scaffold(
-    backgroundColor: Colors.amber[100],
+    backgroundColor: Colors.white,
 
     appBar: AppBar(
       title: Text('Create Your Profile'),
@@ -14,12 +15,11 @@ void main() => runApp(MaterialApp(
       
      
       children: [
-         Container(
-      margin:  EdgeInsets.all(6.0),
-      color: Colors.amber[100],
-      child: Text('Your Full Name:')
-    
-    ),
+        SizedBox(height: 20),
+         
+         Text("Your Full Name:"),
+         
+         
         
     SizedBox(height: 1.0),
     TextFormField(
@@ -27,71 +27,63 @@ void main() => runApp(MaterialApp(
 
       },
     ),
+     SizedBox(height: 10),
+    Text('Phone No:'),
+
+    SizedBox(height: 1.0),
+    TextFormField(
+      onChanged: (val){
+
+      },
+    ),
+    SizedBox(height: 10),
+     Text('City,State:'),
+
+    SizedBox(height: 1.0),
+    TextFormField(
+      onChanged: (val){
+
+      },
+    ),
+    SizedBox(height: 10),
+     Text('Your Doctors Name:'),
+
+    SizedBox(height: 1.0),
+    TextFormField(
+      onChanged: (val){
+
+      },
+    ),
+    SizedBox(height: 10),
+     Text('Date of your Transplant surgery:'),
+
+    SizedBox(height: 1.0),
+    TextFormField(
+      onChanged: (val){
+
+      },
+    ),
+    SizedBox(height: 10),
+     Text('Any comments to the Doctor:'),
      
-     Container(
-      margin: EdgeInsets.all(6.0),
-      color: Colors.amber[100],
-      child: Text('Phone no.:')
-    
-    ),
     SizedBox(height: 1.0),
     TextFormField(
       onChanged: (val){
 
       },
-    ),
-    Container(
-      margin: EdgeInsets.all(6.0),
-      color: Colors.amber[100],
-      child: Text('City,State:')
+    ), 
+    SizedBox(height: 20),
     
-    ),
-    SizedBox(height: 1.0),
-    TextFormField(
-      onChanged: (val){
-
-      },
-    ),
-    Container(
-      margin: EdgeInsets.all(6.0),
-      color: Colors.amber[100],
-      child: Text('Your Doctors Name:')
-    
-    ),
-    SizedBox(height: 1.0),
-    TextFormField(
-      onChanged: (val){
-
-      },
-    ),
-    Container(
-      margin: EdgeInsets.all(6.0),
-      color: Colors.amber[100],
-      child: Text('Date of your Transplant surgery:')
-    
-    ),
-    SizedBox(height: 1.0),
-    TextFormField(
-      onChanged: (val){
-
-      },
-    ),
-    Container(
-      margin: EdgeInsets.all(6.0),
-      color: Colors.amber[100],
-      child: Text('Any comments to the Doctor:')
-    
-    ),
-    SizedBox(height: 1.0),
-    TextFormField(
-      onChanged: (val){
-
-      },
-    ),
     FlatButton(
-      onPressed: () {},
-      color: Colors.cyan, 
-    child:Text('Save Your Details'))
+      
+      onPressed: () {
+        Navigator.push(context, 
+        MaterialPageRoute(builder: (context)=> UploadScreen()),
+        );
+      },
+      color: Colors.cyan[300], 
+    child:Text('Save Your Details')),
+    
     
     
 
