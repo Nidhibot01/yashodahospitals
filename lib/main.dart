@@ -77,9 +77,7 @@ void main() => runApp(MaterialApp(
     FlatButton(
       
       onPressed: () {
-        Navigator.push(context, 
-        MaterialPageRoute(builder: (context)=> UploadScreen()),
-        );
+        
       },
       color: Colors.cyan[300], 
     child:Text('Save Your Details')),
