@@ -11,13 +11,12 @@ void main() => runApp(MaterialApp(
       centerTitle: true,
       backgroundColor: Colors.amber[800],
     ),
-    body: sequence()
+    body: upload()
      
    
   ),
 
-))
-;
+));
 
 class upload extends StatelessWidget {
   
@@ -92,7 +91,7 @@ class upload extends StatelessWidget {
       onPressed: () {
         
       },
-      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.cyan)),
+      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.cyan[300])),
     child:Text('Save Your Details')),
     
        
