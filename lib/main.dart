@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_2/upload.dart';
 
 
 void main() => runApp(MaterialApp(
@@ -10,8 +11,20 @@ void main() => runApp(MaterialApp(
       centerTitle: true,
       backgroundColor: Colors.amber[800],
     ),
-    body:
-    Column(
+    body: sequence()
+     
+   
+  ),
+
+))
+;
+
+class upload extends StatelessWidget {
+  
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
       
      
       children: [
@@ -74,27 +87,21 @@ void main() => runApp(MaterialApp(
     ), 
     SizedBox(height: 20),
     
-    FlatButton(
+    ElevatedButton(
       
       onPressed: () {
         
       },
-      color: Colors.cyan[300], 
+      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.cyan)),
     child:Text('Save Your Details')),
     
-    
-    
+       
 
     
-    
-
-    
-
-
       ]
-    ), 
-   
-  ),
-
-));
+    );
+      
+    
+  }
+}
 
