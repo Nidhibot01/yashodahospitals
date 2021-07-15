@@ -89,6 +89,9 @@ class upload extends StatelessWidget {
     ElevatedButton(
       
       onPressed: () {
+        Navigator.push(context,
+        MaterialPageRoute(builder: (context) => sequence(),
+        ));
         
       },
       style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.cyan[300])),

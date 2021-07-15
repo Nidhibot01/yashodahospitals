@@ -14,11 +14,13 @@ class sequence extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
+                    
           backgroundColor: Colors.amber[800],
           title: Text('Upload Your files'),
           centerTitle: true,
         
         ),
+        
         body: Container(
           padding: EdgeInsets.all(20.0),
           child: Text(
